@@ -1,0 +1,50 @@
+.cf {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.contacts{
+  background: #3d4855;
+  width:20%;
+  .search{
+    margin:0 auto;
+    width:80%;
+    border-radius: 20px;
+    background: #323f4e;
+    border:none;
+    padding: 0 12px;
+    input{
+      font-size: 14px;
+      padding:12px ;
+      background:none;
+      border:none;
+      outline:none;
+    }
+  }
+  .contacts-list{
+    padding:20px;
+    color:#fff;
+    img{
+      border-radius:50%;
+      float:left;
+      margin-right: 20px;
+    }
+    .contact-message, .time-created{
+      color:#68717c;
+      overflow: hidden;
+        text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .time-created{
+      float:right;
+    }
+  }
+
+
+}
